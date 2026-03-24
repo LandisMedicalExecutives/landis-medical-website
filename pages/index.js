@@ -7,6 +7,7 @@ export default function Home() {
         <title>Landis Medical Executives - Advanced Pain Management</title>
         <meta name="description" content="Professional pain management and healthcare solutions" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       </Head>
 
       <style jsx global>{`
@@ -82,6 +83,39 @@ export default function Home() {
           transform: translateY(-10px);
           box-shadow: 0 15px 40px rgba(0,0,0,0.2) !important;
         }
+
+        .icon-box {
+          width: 80px;
+          height: 80px;
+          background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 20px;
+          box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+        }
+
+        .icon-box i {
+          font-size: 40px;
+          color: white;
+        }
+
+        .reason-icon {
+          width: 70px;
+          height: 70px;
+          background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 15px;
+        }
+
+        .reason-icon i {
+          font-size: 35px;
+          color: white;
+        }
       `}</style>
 
       {/* Navbar */}
@@ -96,7 +130,8 @@ export default function Home() {
             <span style={styles.logoText}>Landis Medical</span>
           </div>
           <a href="tel:856-213-2737" className="btn btn-white" style={styles.navButton}>
-            📞 856-213-2737
+            <i className="fas fa-phone" style={{marginRight: '8px'}}></i>
+            856-213-2737
           </a>
         </div>
       </nav>
@@ -108,7 +143,8 @@ export default function Home() {
           <h1 style={styles.heroTitle}>Advanced Pain Management Solutions</h1>
           <p style={styles.heroSubtitle}>Delivering expert care through innovation, precision, and compassion</p>
           <a href="tel:856-213-2737" className="btn btn-white" style={{...styles.heroButton, fontSize: '18px', padding: '15px 40px'}}>
-            📞 Call Now: 856-213-2737
+            <i className="fas fa-phone" style={{marginRight: '8px'}}></i>
+            Call Now: 856-213-2737
           </a>
         </div>
       </section>
@@ -130,7 +166,9 @@ export default function Home() {
           <div style={styles.servicesGrid}>
             {/* Service Card 1 */}
             <div style={styles.serviceCard} className="service-card">
-              <div style={styles.serviceIcon}>💉</div>
+              <div className="icon-box">
+                <i className="fas fa-syringe"></i>
+              </div>
               <h3 style={styles.serviceTitle}>Interventional Pain Management</h3>
               <p style={styles.serviceDescription}>
                 Innovative and minimally invasive procedures designed to provide relief from acute and chronic pain conditions.
@@ -139,7 +177,9 @@ export default function Home() {
 
             {/* Service Card 2 */}
             <div style={styles.serviceCard} className="service-card">
-              <div style={styles.serviceIcon}>🔬</div>
+              <div className="icon-box">
+                <i className="fas fa-flask-vial"></i>
+              </div>
               <h3 style={styles.serviceTitle}>Diagnostic Testing & Care Coordination</h3>
               <p style={styles.serviceDescription}>
                 Comprehensive diagnostic services with coordinated care management for optimal patient outcomes.
@@ -148,7 +188,9 @@ export default function Home() {
 
             {/* Service Card 3 */}
             <div style={styles.serviceCard} className="service-card">
-              <div style={styles.serviceIcon}>⚖️</div>
+              <div className="icon-box">
+                <i className="fas fa-gavel"></i>
+              </div>
               <h3 style={styles.serviceTitle}>Strategic Mid-Legal Support</h3>
               <p style={styles.serviceDescription}>
                 Expert guidance bridging medical care and legal case management for personal injury matters.
@@ -164,17 +206,23 @@ export default function Home() {
           <h2 style={styles.sectionTitle}>Why Choose Landis Medical?</h2>
           <div style={styles.reasonsGrid}>
             <div style={styles.reasonCard}>
-              <div style={styles.reasonIcon}>✨</div>
+              <div className="reason-icon">
+                <i className="fas fa-star"></i>
+              </div>
               <h3 style={styles.reasonTitle}>Expert Team</h3>
               <p>Highly trained medical professionals with years of experience</p>
             </div>
             <div style={styles.reasonCard}>
-              <div style={styles.reasonIcon}>🏆</div>
+              <div className="reason-icon">
+                <i className="fas fa-trophy"></i>
+              </div>
               <h3 style={styles.reasonTitle}>Proven Results</h3>
               <p>Thousands of successful treatments and satisfied patients</p>
             </div>
             <div style={styles.reasonCard}>
-              <div style={styles.reasonIcon}>❤️</div>
+              <div className="reason-icon">
+                <i className="fas fa-heart"></i>
+              </div>
               <h3 style={styles.reasonTitle}>Patient Care</h3>
               <p>Personalized care plans focused on your well-being</p>
             </div>
@@ -194,7 +242,8 @@ export default function Home() {
               <p style={styles.contactHours}>Monday - Friday, 9:00 AM - 5:00 PM EST</p>
             </div>
             <a href="tel:856-213-2737" className="btn btn-white" style={{fontSize: '16px', padding: '12px 30px'}}>
-              📞 Call Now
+              <i className="fas fa-phone" style={{marginRight: '8px'}}></i>
+              Call Now
             </a>
           </div>
         </div>
@@ -218,15 +267,15 @@ export default function Home() {
             <div>
               <h4 style={styles.footerTitle}>Quick Links</h4>
               <ul style={styles.footerList}>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><i className="fas fa-chevron-right" style={{marginRight: '8px'}}></i>About Us</a></li>
+                <li><a href="#services"><i className="fas fa-chevron-right" style={{marginRight: '8px'}}></i>Services</a></li>
+                <li><a href="#contact"><i className="fas fa-chevron-right" style={{marginRight: '8px'}}></i>Contact</a></li>
               </ul>
             </div>
             <div>
               <h4 style={styles.footerTitle}>Contact</h4>
-              <p><a href="tel:856-213-2737" style={styles.footerLink}>📞 856-213-2737</a></p>
-              <p style={styles.footerText}>Hours: Mon-Fri, 9AM-5PM EST</p>
+              <p><a href="tel:856-213-2737" style={styles.footerLink}><i className="fas fa-phone" style={{marginRight: '8px'}}></i>856-213-2737</a></p>
+              <p style={styles.footerText}><i className="fas fa-clock" style={{marginRight: '8px'}}></i>Hours: Mon-Fri, 9AM-5PM EST</p>
             </div>
           </div>
           <div style={styles.footerBottom}>
@@ -353,10 +402,6 @@ const styles = {
     textAlign: 'center',
     cursor: 'pointer',
   },
-  serviceIcon: {
-    fontSize: '60px',
-    marginBottom: '20px',
-  },
   serviceTitle: {
     fontSize: '24px',
     fontWeight: 'bold',
@@ -385,10 +430,6 @@ const styles = {
     borderRadius: '10px',
     textAlign: 'center',
     boxShadow: '0 3px 15px rgba(0,0,0,0.08)',
-  },
-  reasonIcon: {
-    fontSize: '50px',
-    marginBottom: '15px',
   },
   reasonTitle: {
     fontSize: '20px',
