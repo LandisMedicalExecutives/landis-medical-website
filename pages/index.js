@@ -363,7 +363,7 @@ const styles = {
     minHeight: '44px',
   },
   hero: {
-  backgroundImage: 'url("https://c.pxhere.com/images/fd/75/25e0b91093d48d1f365fd43c7cc2-1571983.jpg")',
+  backgroundImage: 'url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=600&fit=crop")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '400px',
