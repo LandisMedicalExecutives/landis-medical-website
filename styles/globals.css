@@ -1,0 +1,17 @@
+@import 'path/to/tailwind.css';
+
+/* Global Styles */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8fafc;
+    color: #111827;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Add other global styles here */
