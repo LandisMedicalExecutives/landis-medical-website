@@ -127,7 +127,6 @@ export default function Home() {
               alt="Landis Medical Logo"
               style={styles.logoImg}
             />
-            <span style={styles.logoText}>Landis Medical</span>
           </div>
           <a href="tel:856-213-2737" className="btn btn-white" style={styles.navButton}>
             <i className="fas fa-phone" style={{marginRight: '8px'}}></i>
@@ -258,7 +257,7 @@ export default function Home() {
                 <img 
                   src="/images/logo.png (Landis Medical logo).png" 
                   alt="Landis Medical Logo"
-                  style={{height: '40px', marginRight: '10px'}}
+                  style={{height: '50px', marginRight: '10px'}}
                 />
                 <h4 style={{...styles.footerTitle, margin: 0}}>Landis Medical Executives</h4>
               </div>
@@ -292,33 +291,32 @@ const styles = {
   navbar: {
     backgroundColor: '#0066cc',
     color: 'white',
-    padding: '15px 0',
+    padding: '20px 0',
     position: 'sticky',
     top: 0,
     zIndex: 100,
-    boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+    boxShadow: '0 4px 15px rgba(0,0,0,0.15)',
   },
   navContainer: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    minHeight: '80px',
   },
   logo: {
     display: 'flex',
     alignItems: 'center',
-    gap: '12px',
+    justifyContent: 'flex-start',
+    flex: 1,
   },
   logoImg: {
-    height: '50px',
+    height: '75px',
     width: 'auto',
-  },
-  logoText: {
-    fontSize: '24px',
-    fontWeight: 'bold',
-    color: 'white',
+    objectFit: 'contain',
   },
   navButton: {
-    padding: '10px 20px',
+    padding: '12px 25px',
+    marginLeft: 'auto',
   },
 
   // Hero Section
