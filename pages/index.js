@@ -350,7 +350,7 @@ const styles = {
   },
   logoImg: {
     height: 'auto',
-    maxHeight: '65px',
+    maxHeight: '100px',
     width: 'auto',
     maxWidth: '200px',
     objectFit: 'contain',
