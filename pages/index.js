@@ -365,7 +365,7 @@ const styles = {
   hero: {
   backgroundImage: 'url("/hero-doctor.jpg")',
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundPosition: 'center 30%',
     minHeight: '400px',
     display: 'flex',
     alignItems: 'center',
