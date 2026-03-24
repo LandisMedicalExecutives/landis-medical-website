@@ -70,6 +70,17 @@ export default function Home() {
           box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
         }
 
+        .btn-blue {
+          background-color: #0066cc;
+          color: white;
+        }
+
+        .btn-blue:hover {
+          background-color: #0052a3;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+        }
+
         .btn-white {
           background-color: white;
           color: #0066cc;
@@ -128,7 +139,7 @@ export default function Home() {
               style={styles.logoImg}
             />
           </div>
-          <a href="tel:856-213-2737" className="btn btn-white" style={styles.navButton}>
+          <a href="tel:856-213-2737" className="btn btn-blue" style={styles.navButton}>
             <i className="fas fa-phone" style={{marginRight: '8px'}}></i>
             856-213-2737
           </a>
@@ -289,19 +300,20 @@ export default function Home() {
 const styles = {
   // Navbar
   navbar: {
-    backgroundColor: '#0066cc',
-    color: 'white',
-    padding: '20px 0',
+    backgroundColor: '#ffffff',
+    color: '#0066cc',
+    padding: '15px 0',
     position: 'sticky',
     top: 0,
     zIndex: 100,
     boxShadow: '0 4px 15px rgba(0,0,0,0.15)',
+    borderBottom: '3px solid #0066cc',
   },
   navContainer: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    minHeight: '80px',
+    minHeight: '120px',
   },
   logo: {
     display: 'flex',
@@ -310,13 +322,14 @@ const styles = {
     flex: 1,
   },
   logoImg: {
-    height: '75px',
+    height: '110px',
     width: 'auto',
     objectFit: 'contain',
   },
   navButton: {
     padding: '12px 25px',
     marginLeft: 'auto',
+    fontSize: '16px',
   },
 
   // Hero Section
