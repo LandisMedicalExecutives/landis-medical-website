@@ -77,13 +77,23 @@ export default function Home() {
         .btn-white:hover {
           background-color: #f0f0f0;
         }
+
+        .service-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 40px rgba(0,0,0,0.2) !important;
+        }
       `}</style>
 
       {/* Navbar */}
       <nav style={styles.navbar}>
         <div className="container" style={styles.navContainer}>
           <div style={styles.logo}>
-            <span style={styles.logoText}>🏥 Landis Medical</span>
+            <img 
+              src="/images/logo.png (Landis Medical logo).png" 
+              alt="Landis Medical Logo"
+              style={styles.logoImg}
+            />
+            <span style={styles.logoText}>Landis Medical</span>
           </div>
           <a href="tel:856-213-2737" className="btn btn-white" style={styles.navButton}>
             📞 856-213-2737
@@ -119,7 +129,7 @@ export default function Home() {
           <h2 style={styles.sectionTitle}>Our Services</h2>
           <div style={styles.servicesGrid}>
             {/* Service Card 1 */}
-            <div style={styles.serviceCard}>
+            <div style={styles.serviceCard} className="service-card">
               <div style={styles.serviceIcon}>💉</div>
               <h3 style={styles.serviceTitle}>Interventional Pain Management</h3>
               <p style={styles.serviceDescription}>
@@ -128,7 +138,7 @@ export default function Home() {
             </div>
 
             {/* Service Card 2 */}
-            <div style={styles.serviceCard}>
+            <div style={styles.serviceCard} className="service-card">
               <div style={styles.serviceIcon}>🔬</div>
               <h3 style={styles.serviceTitle}>Diagnostic Testing & Care Coordination</h3>
               <p style={styles.serviceDescription}>
@@ -137,7 +147,7 @@ export default function Home() {
             </div>
 
             {/* Service Card 3 */}
-            <div style={styles.serviceCard}>
+            <div style={styles.serviceCard} className="service-card">
               <div style={styles.serviceIcon}>⚖️</div>
               <h3 style={styles.serviceTitle}>Strategic Mid-Legal Support</h3>
               <p style={styles.serviceDescription}>
@@ -195,7 +205,14 @@ export default function Home() {
         <div className="container">
           <div style={styles.footerContent}>
             <div>
-              <h4 style={styles.footerTitle}>Landis Medical Executives</h4>
+              <div style={{display: 'flex', alignItems: 'center', marginBottom: '15px'}}>
+                <img 
+                  src="/images/logo.png (Landis Medical logo).png" 
+                  alt="Landis Medical Logo"
+                  style={{height: '40px', marginRight: '10px'}}
+                />
+                <h4 style={{...styles.footerTitle, margin: 0}}>Landis Medical Executives</h4>
+              </div>
               <p>Delivering advanced pain management solutions with innovation and compassion.</p>
             </div>
             <div>
@@ -240,10 +257,16 @@ const styles = {
   logo: {
     display: 'flex',
     alignItems: 'center',
+    gap: '12px',
+  },
+  logoImg: {
+    height: '50px',
+    width: 'auto',
   },
   logoText: {
     fontSize: '24px',
     fontWeight: 'bold',
+    color: 'white',
   },
   navButton: {
     padding: '10px 20px',
