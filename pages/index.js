@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+ 
   return (
     <>
       <Head>
