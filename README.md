@@ -1,2 +1,3 @@
-# landis-medical-website
-Professional medical website for Landis Medical
+# Landis Medical Associates
+Professional medical website for Landis Medical Associates
+
