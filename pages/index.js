@@ -5,7 +5,7 @@ const IndexPage = () => {
     <div>
       {/* Navbar */}
       <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', background: '#333', color: '#fff' }}>
-        <div style={{ fontSize: '24px' }}>Landis Medical Executives</div>
+        <div style={{ fontSize: '24px' }}>Landis Medical Associates</div>
         <div>
           <a href="#" style={{ color: '#fff', margin: '0 15px' }}>Home</a>
           <a href="#" style={{ color: '#fff', margin: '0 15px' }}>Services</a>
@@ -16,7 +16,7 @@ const IndexPage = () => {
 
       {/* Hero Section */}
       <header style={{ background: '#f5f5f5', padding: '50px', textAlign: 'center' }}>
-        <h1 style={{ fontSize: '48px' }}>Welcome to Landis Medical Executives</h1>
+        <h1 style={{ fontSize: '48px' }}>Welcome to Landis Medical Associates</h1>
         <p style={{ fontSize: '20px' }}>Your health is our priority</p>
       </header>
 
@@ -58,7 +58,7 @@ const IndexPage = () => {
 
       {/* Footer Section */}
       <footer style={{ padding: '20px', background: '#333', color: '#fff', textAlign: 'center' }}>
-        <p>&copy; 2026 Landis Medical Executives. All rights reserved.</p>
+        <p>&copy; 2026 Landis Medical Associates. All rights reserved.</p>
       </footer>
     </div>
   );
