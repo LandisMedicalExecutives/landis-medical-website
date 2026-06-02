@@ -1,11 +1,21 @@
 import React from 'react';
+import Image from 'next/image';
 
 const IndexPage = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', background: '#333', color: '#fff' }}>
-        <div style={{ fontSize: '24px' }}>Landis Medical Associates</div>
+      <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', background: '#333', color: '#fff', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <Image 
+            src="/images/logo.png (Landis Medical logo).png" 
+            alt="Landis Medical Associates Logo" 
+            width={40} 
+            height={40}
+            style={{ marginRight: '10px' }}
+          />
+          <span style={{ fontSize: '24px' }}>Landis Medical Associates</span>
+        </div>
         <div>
           <a href="#" style={{ color: '#fff', margin: '0 15px' }}>Home</a>
           <a href="#" style={{ color: '#fff', margin: '0 15px' }}>Services</a>
